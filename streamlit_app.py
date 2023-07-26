@@ -36,7 +36,7 @@ try:
     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
     # displays the data in a table
     streamlit.dataframe(fruityvice_normalized)
-else ERLErorror as e:
+except ERLErorror as e:
   streamlit.error()
 
 
